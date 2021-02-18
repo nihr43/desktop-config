@@ -1,0 +1,23 @@
+---
+
+- name: install common packages
+  package:
+   name: "{{ item }}"
+   state: present
+  with_items:
+   - "sudo"
+   - "git"
+   - "vim"
+   - "htop"
+   - "xorg"
+   - "i3"
+   - "xfce4-terminal"
+   - "pavucontrol"
+   - "volumeicon-alsa"
+   - "xclip"
+   - "audacity"
+   - "mpv"
+   - "moreutils"
+   - "chromium"
+   - "firefox-esr"
+   - "arandr"
