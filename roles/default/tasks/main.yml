@@ -21,3 +21,5 @@
    - "chromium"
    - "firefox-esr"
    - "arandr"
+   - "moreutils"
+   - "tree"
