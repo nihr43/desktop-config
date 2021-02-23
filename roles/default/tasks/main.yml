@@ -1,25 +1,26 @@
 ---
 
-- name: install common packages
+- name: enforce packages
   package:
-   name: "{{ item }}"
+   name: "{{ packages }}"
    state: present
-  with_items:
-   - "sudo"
-   - "git"
-   - "vim"
-   - "htop"
-   - "xorg"
-   - "i3"
-   - "xfce4-terminal"
-   - "pavucontrol"
-   - "volumeicon-alsa"
-   - "xclip"
-   - "audacity"
-   - "mpv"
-   - "moreutils"
-   - "chromium"
-   - "firefox-esr"
-   - "arandr"
-   - "moreutils"
-   - "tree"
+  vars:
+   packages:
+    - "sudo"
+    - "git"
+    - "vim"
+    - "htop"
+    - "xorg"
+    - "i3"
+    - "xfce4-terminal"
+    - "pavucontrol"
+    - "volumeicon-alsa"
+    - "xclip"
+    - "audacity"
+    - "mpv"
+    - "moreutils"
+    - "chromium"
+    - "firefox-esr"
+    - "arandr"
+    - "moreutils"
+    - "tree"
